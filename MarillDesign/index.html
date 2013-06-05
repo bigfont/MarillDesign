@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Marill Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marill Design interior design.">
+    <meta name="keywords" content="interior design, design, interior" />
+    <meta name="author" content="Philippe Marill">
+    <link href="assets-20/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets-20/bootstrap/css/responsive.css" rel="stylesheet" />
+    <link href="assets-20/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets-20/site/css/bigfont.css" rel="stylesheet" />
+    <style type="text/css">
+        /* For quick prototyping */
+
+    </style>
+</head>
+<body>
+
+    <a id="top" />
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">MARILL DESIGN</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#"
+                            data-content="Come back soon to view the portfolio." data-placement="bottom" data-toggle="popover" data-original-title="Coming Soon"
+                            title="">PORTFOLIO</a></li>
+                        <li><a href="#"
+                            data-content="Come back soon to view the contact form." data-placement="bottom" data-toggle="popover" data-original-title="Coming Soon"
+                            title="">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid container-widescreen">
+        <section>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="myCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <img src="assets-20/site/img/slide1.png" />
+                            </div>
+                            <div class="item">
+                                <img src="assets-20/site/img/slide2.png" />
+                            </div>
+                            <div class="item">
+                                <img src="assets-20/site/img/slide3.png" />
+                            </div>
+                        </div>
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <article class="container-fluid">
+
+        <section>
+            <header>
+                <h1>CONTACT</h1>
+            </header>
+
+            <div class="row-fluid">
+                <div class="span4 offset2 shadow">
+                    <address>
+                        <strong>Marill Design, Inc.</strong><br />
+                        970 Walkers Hook Road<br />
+                        Salt Spring Island, BC  V8K 1B5<br />
+                    </address>
+                </div>
+                <div class="span4 shadow">
+                    <address>
+                        <strong>Philippe Marill</strong>
+                        <ul class="icons-ul">
+                            <li><i class="icon-li icon-phone"></i><a href="tel:1-778-353-4444">778-353-4444</a></li>
+                            <li><i class="icon-li icon-mobile-phone"></i><a href="tel:1-250-221-1463">250-221-1463</a></li>
+                            <li><i class="icon-li icon-envelope"></i><a href="tel:1-123-456-7890">123-456-7890</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <header>
+                <h1>ABOUT</h1>
+            </header>
+
+            <div class="row-fluid">
+                <div class="span4 shadow">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel elit quis est varius elementum ut vel nunc. 
+                    Cras gravida volutpat mattis. Etiam auctor, magna quis gravida auctor, nibh dolor varius felis, 
+                    in elementum elit velit vel lectus.
+                    </p>
+                </div>
+                <div class="span4 shadow">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel elit quis est varius elementum ut vel nunc. 
+                    Cras gravida volutpat mattis. Etiam auctor, magna quis gravida auctor, nibh dolor varius felis, 
+                    in elementum elit velit vel lectus.
+                    </p>
+                </div>
+                <div class="span4 shadow">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel elit quis est varius elementum ut vel nunc. 
+                    Cras gravida volutpat mattis. Etiam auctor, magna quis gravida auctor, nibh dolor varius felis, 
+                    in elementum elit velit vel lectus.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </article>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <a class="return-to-top" href="#top"><i class="icon-arrow-up"></i></a>
+            <p class="badge-of-honour">Website by <a href="http://www.bigfont.ca">BigFont.ca</a></p>
+        </div>
+    </footer>
+
+    <script src="assets-20/external/jquery.js"></script>
+    <script src="assets-20/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function enablePopover() {
+            $("a[data-toggle=popover]")
+            .popover({ delay: 500, trigger: 'hover' })
+            .click(function (e) {
+                e.preventDefault()
+            })
+        }
+        $(document).ready(function () {
+            enablePopover();
+        });
+    </script>
+</body>
+</html>
