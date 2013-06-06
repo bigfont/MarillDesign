@@ -2,6 +2,8 @@
 @import "../../bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "../../bootstrap/less/mixins.less";
 
+@navbarMaxWidth: 920px;
+
 .container-widescreen {
     padding: 0;
 }
@@ -20,7 +22,7 @@ header {
 
     .navbar-inner {
         border-radius: 0;
-        max-width: 920px;
+        max-width: @navbarMaxWidth;
         margin: auto;
         padding-top: 40px;
         padding-bottom: 5px;
@@ -63,10 +65,6 @@ header {
     min-height: 300px;
 }
 
-.badge-of-honour {
-    float: right;
-}
-
 address {
     height: 100px;
 
@@ -82,12 +80,20 @@ address {
     .border-radius(5px);
 }
 
-a.return-to-top {
-    position: absolute;
-    margin-left: 50%;
-    left: -25px;
-    width: 50px;
+footer.footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @navbarMaxWidth;
+    p.badge-of-honour {
+        float: left;
+    }
+
+    a.return-to-top {
+        float: right;
+    }
 }
+
+
 
 // MEDIA QUERIES
 // ------------------
