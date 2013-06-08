@@ -1,0 +1,112 @@
+﻿// Core variables and mixins from bootstrap
+@import "../../bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../../bootstrap/less/mixins.less";
+
+@navbarMaxWidth: 920px;
+
+@-ms-viewport {
+    width:auto;
+}
+
+.container-widescreen {
+    padding: 0;
+}
+
+section, header, footer {
+    margin-bottom: 50px;
+}
+
+header {
+    text-align: center;
+}
+
+.navbar {
+    background-color: @black;
+    margin-bottom: 0;
+
+    .navbar-inner {
+        border-radius: 0;
+        max-width: @navbarMaxWidth;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+
+    .brand {
+        float: left;
+        font-size: 30px;
+        border-bottom: thin solid @grayLighter;
+    }
+
+    .nav {
+        clear: both;
+        float: right;
+    }
+}
+
+.carousel, .carousel-inner {
+    background: black;
+    border-bottom: 2px solid @grayLight;
+    border-top: 2px solid @grayLight;
+    margin-bottom: 0;
+
+    .carousel-control {
+        background: none;
+        border: none;
+        width: 75px;
+        height: 75px;
+        font-size: 75px;
+        text-align: center;
+    }
+
+    .item img {
+        height: auto; /*maintain aspect ratio*/
+        width: 100%;
+    }
+}
+
+.span4 {
+    min-height: 300px;
+}
+
+address {
+    height: 100px;
+
+    ul.icons-ul {
+        margin-left: 30px;
+    }
+}
+
+.shadow {
+    border: thin solid @grayLighter;
+    padding: 15px;
+    .box-shadow(3px 3px 3px @grayLighter);
+    .border-radius(5px);
+}
+
+footer.footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @navbarMaxWidth;
+
+    p.badge-of-honour {
+        float: left;
+    }
+
+    a.return-to-top {
+        float: right;
+    }
+}
+
+
+
+// MEDIA QUERIES
+// ------------------
+// Large desktops
+@import "bigfont-responsive-1200px-min.less";
+// Regular desktops to large desktops
+@import "bigfont-responsive-980px-1199px.less";
+// Tablets to regular desktops
+@import "bigfont-responsive-768px-979px.less";
+// Phones to portrait tablets and narrow desktops
+@import "bigfont-responsive-767px-max.less";

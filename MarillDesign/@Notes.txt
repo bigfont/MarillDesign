@@ -1,10 +1,10 @@
 ﻿----------------------------
 LESS w node.js command line
 ----------------------------
-cd "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assets-20\site\less"
+cd "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assets-25\site\less"
 lessc -x bigfont.less > ../css/bigfont.css
 
-cd "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assets-20\bootstrap\less"
+cd "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assets-25\bootstrap\less"
 lessc -x bootstrap.less > ../css/bootstrap.css 
 lessc -x responsive.less > ../css/responsive.css 
 
@@ -12,7 +12,7 @@ lessc -x responsive.less > ../css/responsive.css
 JS with windows command line
 ----------------------------
 
-cd "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assets-20\site\js"
+cd "C:\Users\Shaun\Documents\GitHub\MarillDesign\MarillDesign\MarillDesign\assets-25\site\js"
 jsmin <bigfont.js> bigfont.min.js
 
 ----------------------------
