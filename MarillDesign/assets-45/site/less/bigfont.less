@@ -82,16 +82,18 @@ header {
 }
 
 address {
-    height: 100px;
+    min-height: 100px;
+    margin:0;
 
     ul.icons-ul {
         margin-left: 30px;
     }
-}
 
-// to wrap email address 
-a span {
-    display: inline-block;
+    // to wrap email address
+    a span {
+        display: inline-block;
+        text-indent: 0;
+    }
 }
 
 .shadow {
@@ -99,6 +101,10 @@ a span {
     padding: 15px;
     .box-shadow(3px 3px 3px @grayLighter);
     .border-radius(5px);
+}
+
+i[class*="icon"] {
+    // style the icon classes here as needed
 }
 
 footer.footer {
