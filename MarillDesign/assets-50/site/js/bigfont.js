@@ -52,7 +52,7 @@
         indicators = $(carouselSelector).find('.carousel-indicators');
         items = $(carouselSelector).find('.carousel-inner');
 
-        imgDir = 'assets-45/site/img/carousel/';
+        imgDir = 'assets-50/site/img/carousel/';
 
         for (i = 0; i < imgCount; i += 1) {
 

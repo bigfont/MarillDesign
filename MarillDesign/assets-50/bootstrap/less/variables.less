@@ -32,8 +32,8 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             @grayDark;
+@bodyBackground:        @black;
+@textColor:             @grayLighter;
 
 
 // Links
@@ -45,16 +45,16 @@
 // Typography
 // -------------------------
 @sansFontFamily:        "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+@serifFontFamily:       Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+@monoFontFamily:        "Andale Mono", AndaleMono, monospace;
 
 @baseFontSize:          20px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        26px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @monoFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontFamily:    @serifFontFamily; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -172,7 +172,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #f5f5f5;
+@wellBackground:                  @grayDark;
 
 
 // Navbar

@@ -2,6 +2,8 @@
 @import "../../bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "../../bootstrap/less/mixins.less";
 
+@import "bigfont-type.less";
+
 @navbarMaxWidth: 920px;
 
 @-ms-viewport {
@@ -12,42 +14,58 @@
     padding: 0;
 }
 
+article {
+    margin-top: 30px;
+}
+
 section, header, footer {
     margin-bottom: 50px;
 }
 
-header {
-    text-align: center;
+header, .navbar-inner {
+    max-width: @navbarMaxWidth;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+    div.brand, header.brand {
+
+        &, * {
+            padding: 0 20px;
+        }
+
+        * {
+            max-width: 550px;
+        }
+
+        a.brand, h1.brand {
+            border-bottom: thin solid @grayLighter;
+            display: block;
+            font-family: @headingsFontFamily;
+            font-size: @baseFontSize * 1.5; // match h1
+            float: none;
+            line-height: @baseLineHeight * 1.5;
+        }
+
+        p.brand {
+            font-size: @fontSizeSmall;
+        }
+    }
 
 .navbar {
     background-color: @black;
     margin-bottom: 0;
 
-    .navbar-inner {
-        border-radius: 0;
-        max-width: @navbarMaxWidth;
-        margin: auto;
-        padding-top: 40px;
-        padding-bottom: 5px;
+    button.btn.btn-navbar {
+        position: absolute;
+        right: 25px;
+        top: 10px;
     }
 
-    div.brand {
-        float: left;
-
-        a.brand {
-            font-size: 30px;
-            float: left;
-        }
-
-        p.brand {
-            border-top: thin solid @grayLighter;
-            clear: both;
-            float: left;
-            font-size: 15px;
-            padding-bottom: 0;
-            padding-top: 0;
-        }
+    .navbar-inner {
+        border-radius: 0;
+        padding-top: 40px;
+        padding-bottom: 5px;
     }
 
     .nav {
@@ -77,23 +95,22 @@ header {
     }
 }
 
-.span4.box {
-    min-height: 250px;
-}
-
 address {
     min-height: 100px;
-    margin:0;
+    margin: 0;
 
     ul.icons-ul {
         margin-left: 30px;
     }
-
     // to wrap email address
     a span {
         display: inline-block;
         text-indent: 0;
     }
+}
+
+.span4.box {
+    min-height: 250px;
 }
 
 .shadow {
