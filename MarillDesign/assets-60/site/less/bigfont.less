@@ -4,10 +4,15 @@
 
 @import "bigfont-type.less";
 
-@navbarMaxWidth: 920px;
+@navbarMaxWidth: none;
 
 @-ms-viewport {
     width: auto;
+}
+
+a#top {
+    position: absolute;
+    top: -500px;
 }
 
 .container-widescreen {
@@ -15,7 +20,12 @@
 }
 
 article {
+    padding: 0;
     margin-top: 30px;
+}
+
+section {
+    border: 1px solid @bodyBackground;
 }
 
 section, header, footer {
@@ -28,27 +38,44 @@ header, .navbar-inner {
     margin-right: auto;
 }
 
-    div.brand, header.brand {
+    div.brand, header.brand, footer.brand {
+        width: 95%;
 
-        &, * {
+        &, > * {
             padding: 0 20px;
         }
 
-        * {
-            max-width: 550px;
+        > * {
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-        a.brand, h1.brand {
-            border-bottom: thin solid @grayLighter;
-            display: block;
+        .brand {
+            display: inline-block;
+            float: left;
+            clear: both;
+            margin-left: 0;
+            padding: 0px 20px;
+            text-shadow: 0 1px 0 #0D0D0D;
+        }
+
+        .brand-title {
             font-family: @headingsFontFamily;
             font-size: @baseFontSize * 1.5; // match h1
-            float: none;
-            line-height: @baseLineHeight * 1.5;
+            line-height: 40px;
         }
 
-        p.brand {
+        .brand-subtitle {
             font-size: @fontSizeSmall;
+        }
+
+        hr.brand-border {
+            border-top: none;
+            color: @textColor;
+            line-height: 0;
+            margin: 0;
+            padding: 0;
+            width: 550px;
         }
     }
 
@@ -58,8 +85,8 @@ header, .navbar-inner {
 
     button.btn.btn-navbar {
         position: absolute;
-        right: 25px;
-        top: 10px;
+        right: 19px;
+        top: 19px;
     }
 
     .navbar-inner {
@@ -95,20 +122,6 @@ header, .navbar-inner {
     }
 }
 
-address {
-    min-height: 100px;
-    margin: 0;
-
-    ul.icons-ul {
-        margin-left: 30px;
-    }
-    // to wrap email address
-    a span {
-        display: inline-block;
-        text-indent: 0;
-    }
-}
-
 .span4.box {
     min-height: 250px;
 }
@@ -125,19 +138,34 @@ i[class*="icon"] {
 }
 
 footer.footer {
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 12px;
     max-width: @navbarMaxWidth;
 
-    p.badge-of-honour {
-        float: left;
+    * {
+        display: inline-block;
+        line-height: 18px;
     }
 
-    a.return-to-top {
-        float: right;
+    address span {
+        padding: 0 20px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
     }
+
+    a {
+        color: white;
+    }
+
+        a.return-to-top {
+            float: right;
+        }
 }
-
 
 
 // MEDIA QUERIES
