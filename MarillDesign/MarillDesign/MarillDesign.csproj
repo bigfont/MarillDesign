@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13AE1681-E7EC-4C20-9B82-8E295312606F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarillDesign</RootNamespace>
+    <AssemblyName>MarillDesign</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%40Notes.txt" />
+    <Content Include="assets-60\bootstrap\css\bootstrap.css" />
+    <Content Include="assets-60\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets-60\bootstrap\css\responsive.css" />
+    <Content Include="assets-60\bootstrap\css\responsive.min.css" />
+    <Content Include="assets-60\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets-60\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-affix.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-alert.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-button.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-modal.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-popover.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-tab.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-transition.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="assets-60\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets-60\bootstrap\js\tests\index.html" />
+    <Content Include="assets-60\bootstrap\js\tests\phantom.js" />
+    <Content Include="assets-60\bootstrap\js\tests\server.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-affix.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-alert.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-button.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-carousel.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-collapse.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-dropdown.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-modal.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-phantom.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-popover.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-tab.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-tooltip.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-transition.js" />
+    <Content Include="assets-60\bootstrap\js\tests\unit\bootstrap-typeahead.js" />
+    <Content Include="assets-60\bootstrap\js\tests\vendor\jquery.js" />
+    <Content Include="assets-60\bootstrap\js\tests\vendor\qunit.css" />
+    <Content Include="assets-60\bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="assets-60\bootstrap\less\tests\buttons.html" />
+    <Content Include="assets-60\bootstrap\less\tests\css-tests.css" />
+    <Content Include="assets-60\bootstrap\less\tests\css-tests.html" />
+    <Content Include="assets-60\bootstrap\less\tests\forms-responsive.html" />
+    <Content Include="assets-60\bootstrap\less\tests\forms.html" />
+    <Content Include="assets-60\bootstrap\less\tests\navbar-fixed-top.html" />
+    <Content Include="assets-60\bootstrap\less\tests\navbar-static-top.html" />
+    <Content Include="assets-60\bootstrap\less\tests\navbar.html" />
+    <Content Include="assets-60\external\html5shiv.js" />
+    <Content Include="assets-60\external\jquery.js" />
+    <Content Include="assets-60\external\matchmedia.js" />
+    <Content Include="assets-60\external\picturefill.js" />
+    <Content Include="assets-60\font-awesome\css\bootstrap.css" />
+    <Content Include="assets-60\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="assets-60\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="assets-60\font-awesome\css\font-awesome.css" />
+    <Content Include="assets-60\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets-60\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="assets-60\site\css\bigfont.css" />
+    <Content Include="assets-60\site\css\bigfont.min.css" />
+    <Content Include="assets-60\site\img\carousel\Photo0.png" />
+    <Content Include="assets-60\site\img\carousel\Photo1.png" />
+    <Content Include="assets-60\site\img\carousel\Photo2.png" />
+    <Content Include="assets-60\site\img\carousel\Photo3.png" />
+    <Content Include="assets-60\site\img\carousel\Photo4.png" />
+    <Content Include="assets-60\site\img\carousel\Photo5.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo0-resizeDesktop.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo0-resizeLarge.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo0-resizePhone.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo0-resizePhoneToTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo0-resizePortraitTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo1-resizeDesktop.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo1-resizeLarge.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo1-resizePhone.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo1-resizePhoneToTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo1-resizePortraitTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo2-resizeDesktop.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo2-resizeLarge.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo2-resizePhone.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo2-resizePhoneToTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo2-resizePortraitTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo3-resizeDesktop.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo3-resizeLarge.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo3-resizePhone.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo3-resizePhoneToTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo3-resizePortraitTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo4-resizeDesktop.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo4-resizeLarge.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo4-resizePhone.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo4-resizePhoneToTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo4-resizePortraitTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo5-resizeDesktop.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo5-resizeLarge.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo5-resizePhone.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo5-resizePhoneToTablet.png" />
+    <Content Include="assets-60\site\img\carousel\resized\Photo5-resizePortraitTablet.png" />
+    <Content Include="assets-60\site\js\bigfont.js" />
+    <Content Include="assets-60\site\js\bigfont.min.js" /> 
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets-60\bootstrap\js\.jshintrc" />
+    <Content Include="assets-60\bootstrap\less\accordion.less" />
+    <Content Include="assets-60\bootstrap\less\alerts.less" />
+    <Content Include="assets-60\bootstrap\less\bootstrap.less" />
+    <Content Include="assets-60\bootstrap\less\breadcrumbs.less" />
+    <Content Include="assets-60\bootstrap\less\button-groups.less" />
+    <Content Include="assets-60\bootstrap\less\buttons.less" />
+    <Content Include="assets-60\bootstrap\less\carousel.less" />
+    <Content Include="assets-60\bootstrap\less\close.less" />
+    <Content Include="assets-60\bootstrap\less\code.less" />
+    <Content Include="assets-60\bootstrap\less\component-animations.less" />
+    <Content Include="assets-60\bootstrap\less\dropdowns.less" />
+    <Content Include="assets-60\bootstrap\less\forms.less" />
+    <Content Include="assets-60\bootstrap\less\grid.less" />
+    <Content Include="assets-60\bootstrap\less\hero-unit.less" />
+    <Content Include="assets-60\bootstrap\less\labels-badges.less" />
+    <Content Include="assets-60\bootstrap\less\layouts.less" />
+    <Content Include="assets-60\bootstrap\less\media.less" />
+    <Content Include="assets-60\bootstrap\less\mixins.less" />
+    <Content Include="assets-60\bootstrap\less\modals.less" />
+    <Content Include="assets-60\bootstrap\less\navbar.less" />
+    <Content Include="assets-60\bootstrap\less\navs.less" />
+    <Content Include="assets-60\bootstrap\less\pager.less" />
+    <Content Include="assets-60\bootstrap\less\pagination.less" />
+    <Content Include="assets-60\bootstrap\less\popovers.less" />
+    <Content Include="assets-60\bootstrap\less\progress-bars.less" />
+    <Content Include="assets-60\bootstrap\less\reset.less" />
+    <Content Include="assets-60\bootstrap\less\responsive-1200px-min.less" />
+    <Content Include="assets-60\bootstrap\less\responsive-767px-max.less" />
+    <Content Include="assets-60\bootstrap\less\responsive-768px-979px.less" />
+    <Content Include="assets-60\bootstrap\less\responsive-navbar.less" />
+    <Content Include="assets-60\bootstrap\less\responsive-utilities.less" />
+    <Content Include="assets-60\bootstrap\less\responsive.less" />
+    <Content Include="assets-60\bootstrap\less\scaffolding.less" />
+    <Content Include="assets-60\bootstrap\less\sprites.less" />
+    <Content Include="assets-60\bootstrap\less\tables.less" />
+    <Content Include="assets-60\bootstrap\less\thumbnails.less" />
+    <Content Include="assets-60\bootstrap\less\tooltip.less" />
+    <Content Include="assets-60\bootstrap\less\type.less" />
+    <Content Include="assets-60\bootstrap\less\utilities.less" />
+    <Content Include="assets-60\bootstrap\less\variables.less" />
+    <Content Include="assets-60\bootstrap\less\variables_orig.less" />
+    <Content Include="assets-60\bootstrap\less\wells.less" />
+    <Content Include="assets-60\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="assets-60\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="assets-60\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="assets-60\font-awesome\font\FontAwesome.otf" />
+    <Content Include="assets-60\font-awesome\less\bootstrap.less" />
+    <Content Include="assets-60\font-awesome\less\core.less" />
+    <Content Include="assets-60\font-awesome\less\extras.less" />
+    <Content Include="assets-60\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="assets-60\font-awesome\less\font-awesome.less" />
+    <Content Include="assets-60\font-awesome\less\icons.less" />
+    <Content Include="assets-60\font-awesome\less\mixins.less" />
+    <Content Include="assets-60\font-awesome\less\path.less" />
+    <Content Include="assets-60\font-awesome\less\variables.less" />
+    <Content Include="assets-60\site\img\cropped_square\Thumbs.db" />
+    <Content Include="assets-60\site\img\cropped_wide\Thumbs.db" />
+    <Content Include="assets-60\site\img\logo\Thumbs.db" />
+    <Content Include="assets-60\site\less\bigfont-responsive-1200px-min.less" />
+    <Content Include="assets-60\site\less\bigfont-responsive-767px-max.less" />
+    <Content Include="assets-60\site\less\bigfont-responsive-768px-979px.less" />
+    <Content Include="assets-60\site\less\bigfont-responsive-980px-1199px.less" />
+    <Content Include="assets-60\site\less\bigfont.less" />
+    <Content Include="assets-60\site\less\bigfont-type.less" />
+    <None Include="Properties\PublishProfiles\marilldesign1 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\marilldesign1 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\marrildesign - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\marrildesign - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50767/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

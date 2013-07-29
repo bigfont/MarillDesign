@@ -1,0 +1,180 @@
+﻿// Core variables and mixins from bootstrap
+@import "../../bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../../bootstrap/less/mixins.less";
+
+@import "bigfont-type.less";
+
+@navbarMaxWidth: none;
+
+@-ms-viewport {
+    width: auto;
+}
+
+a#top {
+    position: absolute;
+    top: -500px;
+}
+
+.container-widescreen {
+    padding: 0;
+}
+
+article {
+    padding: 0;
+    margin-top: 30px;
+}
+
+section {
+    border: 1px solid @bodyBackground;
+}
+
+section, header, footer {
+    margin-bottom: 50px;
+}
+
+header, .navbar-inner {
+    max-width: @navbarMaxWidth;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    div.brand, header.brand, footer.brand {
+        width: 95%;
+
+        &, > * {
+            padding: 0 20px;
+        }
+
+        > * {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .brand {
+            display: inline-block;
+            float: left;
+            clear: both;
+            margin-left: 0;
+            padding: 0px 20px;
+            text-shadow: 0 1px 0 #0D0D0D;
+        }
+
+        .brand-title {
+            font-family: @headingsFontFamily;
+            font-size: @baseFontSize * 1.5; // match h1
+            line-height: 40px;
+        }
+
+        .brand-subtitle {
+            font-size: @fontSizeSmall;
+        }
+
+        hr.brand-border {
+            border-top: none;
+            color: @textColor;
+            line-height: 0;
+            margin: 0;
+            padding: 0;
+            width: 550px;
+        }
+    }
+
+.navbar {
+    background-color: @black;
+    margin-bottom: 0;
+
+    button.btn.btn-navbar {
+        position: absolute;
+        right: 19px;
+        top: 19px;
+    }
+
+    .navbar-inner {
+        border-radius: 0;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+
+    .nav {
+        clear: both;
+        float: right;
+    }
+}
+
+.carousel, .carousel-inner {
+    background: black;
+    border-bottom: 2px solid @grayLight;
+    border-top: 2px solid @grayLight;
+    margin-bottom: 0;
+
+    .carousel-control {
+        background: none;
+        border: none;
+        width: 75px;
+        height: 75px;
+        font-size: 75px;
+        text-align: center;
+    }
+
+    .item img {
+        height: auto; /*maintain aspect ratio*/
+        width: 100%;
+    }
+}
+
+.span4.box {
+    min-height: 250px;
+}
+
+.shadow {
+    border: thin solid @grayLighter;
+    padding: 15px;
+    .box-shadow(3px 3px 3px @grayLighter);
+    .border-radius(5px);
+}
+
+i[class*="icon"] {
+    // style the icon classes here as needed
+}
+
+footer.footer {
+    font-size: 12px;
+    max-width: @navbarMaxWidth;
+
+    * {
+        display: inline-block;
+        line-height: 18px;
+    }
+
+    address span {
+        padding: 0 20px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        color: white;
+    }
+
+        a.return-to-top {
+            float: right;
+        }
+}
+
+
+// MEDIA QUERIES
+// ------------------
+// Large desktops
+@import "bigfont-responsive-1200px-min.less";
+// Regular desktops to large desktops
+@import "bigfont-responsive-980px-1199px.less";
+// Tablets to regular desktops
+@import "bigfont-responsive-768px-979px.less";
+// Phones to portrait tablets and narrow desktops
+@import "bigfont-responsive-767px-max.less";
